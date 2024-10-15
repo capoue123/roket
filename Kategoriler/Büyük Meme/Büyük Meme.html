@@ -1,0 +1,231 @@
+<!doctype html>
+<html ⚡>
+<head>
+  <meta charset="utf-8">
+  <title>AMP Video Yükleme Sitesi</title>
+  <link rel="canonical" href="self.html" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="https://cdn.pixabay.com/photo/2022/07/20/07/06/rt-logo-7333543_1280.png" type="image/png" />
+
+  <!-- AMP Boilerplate -->
+  <style amp-boilerplate>
+    body {
+      -webkit-animation: -webkit-critical-animation 0.001s;
+      -moz-animation: -moz-critical-animation 0.001s;
+      -ms-animation: -ms-critical-animation 0.001s;
+      animation: critical-animation 0.001s;
+      visibility: hidden;
+      padding-bottom: 80px; /* Alt kısımda boşluk oluşturuyoruz */
+
+    }
+  </style>
+  <noscript>
+    <style amp-boilerplate>
+      body { visibility: visible; }
+    </style>
+  </noscript>
+
+  <!-- AMP Gereksinimleri -->
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+  <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
+
+  <!-- AMP Özel CSS -->
+  <style amp-custom>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .site-logo {
+      width: 50px;
+      height: auto;
+    }
+    .hamburger {
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .search-container {
+      display: flex;
+      align-items: center;
+    }
+    .search-input {
+      padding: 8px;
+      border: none;
+      border-radius: 4px;
+      margin-right: 8px;
+    }
+    .search-btn {
+      background-color: #f8f8f8;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    .content-area {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .photo {
+      cursor: pointer;
+      margin: 0 15px;
+    }
+    .description {
+      margin: 10px 15px;
+      color: #555;
+      cursor: pointer;
+      text-align: left;
+    }
+    .bold-title {
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    amp-sidebar {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      width: 85vw;
+    }
+    amp-sidebar h2 {
+      margin: 0 0 10px;
+    }
+    amp-sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 14px;
+    }
+    amp-sidebar a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    .close-button {
+      background-color: #444;
+      color: white;
+      border: 1px solid white;
+      font-size: 18px;
+      cursor: pointer;
+      margin-bottom: 10px;
+      display: block;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+    .close-button:hover {
+      background-color: #666;
+    }
+    
+    .next-button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+    .next-button:hover {
+      background-color: #218838;
+    }
+
+    .hidden {
+      display: none;
+    }
+    .visible {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Çekmeceli Menü (Sidebar) -->
+  <amp-sidebar id="sidebar" layout="nodisplay" side="left">
+    <button on="tap:sidebar.close" class="close-button">Kapat</button>
+    <h2>Menü</h2>
+    <a href="../../index/index.html" on="tap:sidebar.close()">Ana Sayfa</a>
+    <a href="../Amatör/Amatör.html" on="tap:sidebar.close()">Amatör</a>
+    <a href="../Anal/Anal.html" on="tap:sidebar.close()">Anal</a>
+    <a href="../Asyalı/Asyalı.html" on="tap:sidebar.close()">Asyalı</a>
+    <a href="Büyük Meme.html" on="tap:sidebar.close()">Büyük Meme</a>
+    <a href="../Esmer/Esmer.html" on="tap:sidebar.close()">Esmer</a>
+    <a href="../Genç/Genç.html" on="tap:sidebar.close()">Genç</a>
+    <a href="../Gizli/Gizli.html" on="tap:sidebar.close()">Gizli</a>
+    <a href="../Grup/Grup.html" on="tap:sidebar.close()">Grup</a>
+    <a href="../Hemşire/Hemşire.html" on="tap:sidebar.close()">Hemşire</a>
+    <a href="../Lezbiyen/Lezbiyen.html" on="tap:sidebar.close()">Lezbiyen</a>
+    <a href="../Liseli/Liseli.html" on="tap:sidebar.close()">Liseli</a>
+    <a href="../Mature/Mature.html" on="tap:sidebar.close()">Mature</a>
+    <a href="../Milf/Milf.html" on="tap:sidebar.close()">Milf</a>
+    <a href="../Oral Sex/Oral Sex.html" on="tap:sidebar.close()">Oral Seks</a>
+    <a href="../OnlyFans/Onlyfans.html" on="tap:sidebar.close()">OnlyFans</a>
+    <a href="../Rus/Rus.html" on="tap:sidebar.close()">Rus</a>
+    <a href="../Sarışın/Sarışın.html" on="tap:sidebar.close()">Sarışın</a>
+    <a href="../Sert/Sert.html" on="tap:sidebar.close()">Sert</a>
+    <a href="../Şişman/Şişman.html" on="tap:sidebar.close()">Şişman</a>
+    <a href="../Swinger/Swinger.html" on="tap:sidebar.close()">Swinger</a>
+    <a href="../Tecavüz/Tecavüz.html" on="tap:sidebar.close()">Tecavüz</a>
+    <a href="../Türbanlı/Türbanlı.html" on="tap:sidebar.close()">Türbanlı</a>
+    <a href="../Türk/Türk.html" on="tap:sidebar.close()">Türk</a>
+    <a href="../Yaşlı/Yaşlı.html" on="tap:sidebar.close()">Yaşlı</a>
+    <a href="../Zenci/Zenci.html" on="tap:sidebar.close()">Zenci</a>
+   
+  </amp-sidebar>
+
+  <!-- Navbar -->
+  <header>
+    <div class="hamburger" on="tap:sidebar.toggle" tabindex="0" role="button">
+      &#9776;
+    </div>
+    <div>
+      <a href="../../index/index.html" target="_top">
+        <amp-img class="site-logo" src="https://images.freeimages.com/image/thumbs/a6e/dark-wolf-logo-triangle-png-art-5695593.png" width="50" height="50" alt="Site Logo"></amp-img>
+      </a>
+    </div>
+    
+  </header>
+
+  <!-- İçerik -->
+  <main>
+    <div class="content-area" id="section1">
+      <div [class]="currentCategory === 'kategori1' ? 'visible' : 'hidden'">
+        <a href="https://belirledigim-link.com" target="_top">
+          <amp-img class="photo" src="https://yenidenergenekon.com/wp-content/uploads/2009/03/kedi.jpg" width="640" height="360" alt="Örnek Fotoğraf" layout="responsive"></amp-img>
+        </a>
+        <p class="description">
+          <strong class="bold-title">asd</strong>
+        </p>
+      </div>
+      <div [class]="currentCategory === 'kategori2' ? 'visible' : 'hidden'">
+        <a href="https://belirledigim-link.com" target="_top">
+          <amp-img class="photo" src="https://yenidenergenekon.com/wp-content/uploads/2009/03/kedi.jpg" width="640" height="360" alt="Örnek Fotoğraf" layout="responsive"></amp-img>
+        </a>
+        <p class="description">
+          <strong class="bold-title">asd</strong>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <!-- İleri Butonu -->
+  <button class="next-button" on="tap:AMP.navigateTo(url='https://yeni-sayfa-linki.com')">İleri</button>
+
+</body>
+</html>
